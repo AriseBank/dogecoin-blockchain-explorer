@@ -10,7 +10,7 @@ hr
 
 div(class="tab-content")
 	div(id="tab-summary", class="tab-pane active", role="tabpanel")
-		if (result.getblock.hash == "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f")
+		if (result.getblock.hash == "82bc68038f6034c0596b6e313729793a887fded6e92a31fbdf70863f89d9bea2")
 			div(class="alert alert-success", style="padding-bottom: 0;")
 				h4(class="alert-heading h5") This is the Bitcoin Genesis Block!
 				:markdown-it
@@ -28,7 +28,7 @@ div(class="tab-content")
 					if (result.getblock.previousblockhash)
 						a(href=("/block/" + result.getblock.previousblockhash)) #{result.getblock.previousblockhash}
 
-					else if (result.getblock.hash == "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f")
+					else if (result.getblock.hash == "82bc68038f6034c0596b6e313729793a887fded6e92a31fbdf70863f89d9bea2")
 						span N/A - This is the 
 						a(href="https://en.bitcoin.it/wiki/Genesis_block") Bitcoin Genesis Block
 
